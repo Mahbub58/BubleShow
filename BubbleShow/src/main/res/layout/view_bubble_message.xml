@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/showCaseMessageViewLayout"
+    android:padding="30dp"
+    >
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_baseline_close_24"
+            android:id="@+id/imageViewShowCaseClose"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/imageViewShowCase"/>
+
+
+        <TextView
+            android:id="@+id/textViewShowCaseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+            android:layout_toRightOf="@id/imageViewShowCase"
+            android:text=" Lorem Ipsum"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/textViewShowCaseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_toRightOf="@id/imageViewShowCase"
+            android:textAlignment="textStart"
+            android:layout_below="@id/textViewShowCaseTitle"
+            android:text="Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry. Lorem Ipsum has been the
+             industry's standard dummy text ever since the 1500s,
+             when an unknown printer took a galley"
+            android:layout_centerHorizontal="true" />
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
